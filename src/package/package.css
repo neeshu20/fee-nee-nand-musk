@@ -1,0 +1,144 @@
+/* styles.css */
+/* CSS */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/back.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .price-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: #333;
+  }
+  
+  .price-filter input {
+    padding: 8px;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  .price-input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 120px;
+  }
+  
+  .price-input::placeholder {
+    color: black;
+    box-shadow: black;
+  }
+  
+  .city-filter {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .city-filter:focus {
+    border-color: blue;
+    border-width: 2px;
+  }
+  
+  .hotel-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hotel-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .hotel-card :hover {
+    transform: translateY(-5px);
+    background-color: black;
+  }
+  
+  .hotel-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .hotel-details {
+    padding: 20px;
+  }
+  
+  .hotel-details h3 {
+    margin: 0;
+    font-size: 20px;
+    color: grey;
+  }
+  .hotel-details h3:hover {
+    color: white;
+  }
+  
+  .hotel-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: grey;
+  }
+  .hotel-details p:hover {
+    color: white;
+  }
+  
+  .add-to-cart-button {
+    padding: 10px 20px;
+    background-color: orange; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: green; 
+    color: white;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: green; /* Blue */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px; /* Adjust margin as needed */
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .search-button:hover {
+    background-color: orange; /* Darker blue */
+  }
+  
